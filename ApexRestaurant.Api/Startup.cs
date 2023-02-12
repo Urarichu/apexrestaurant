@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
+
 namespace ApexRestaurant.Api
 {
     public class Startup
@@ -25,14 +26,13 @@ namespace ApexRestaurant.Api
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
-            RepositoryModule.Register(services,
-                Configuration.GetConnectionString("DefaultConnection"),
-                GetType().Assembly.FullName);
+            services.AddMvc(options => options.EnableEndpointRouting = false);
+            RepositoryModule.Register(services, "server=127.0.0.1;database=ApexRestaurantDB;uid=root;password=", GetType().Assembly.FullName);
             ServicesModule.Register(services);
-services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc();
         }
-
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -49,4 +49,3 @@ services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
     }
 }
-

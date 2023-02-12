@@ -2,18 +2,18 @@ using System.Linq;
 
 namespace ApexRestaurant.Repository
 {
-public interface IGenericRepository<T>
-{
+    public interface IGenericRepository<T>
+    {
 
-T Get(int id);
+        T Get(int id);
 
-IQueryable<T> Query();
+        IQueryable<T> Query();
 
-void Insert(T entity);
+        void Insert(T entity);
 
-void Update(T entity);
+        void Update(T entity);
 
-void Delete(T entity);
+        void Delete(T entity);
 
-}
+    }
 }
