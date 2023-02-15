@@ -1,12 +1,12 @@
 ## ApexResturant
 **Images**
-![Delete image](/Images/delete.png)
 ### Delete
-![Get by id image](/Images/getid.png)
+![Delete image](/Images/delete.png)
 ### Getid
-![Get image](/Images/get.png)
+![Get by id image](/Images/getid.png)
 ### Get
-![Post image](/Images/post.png)
+![Get image](/Images/get.png)
 ### Post
-![Put image](/Images/put.png)
+![Post image](/Images/post.png)
 ### Put
+![Put image](/Images/put.png)
