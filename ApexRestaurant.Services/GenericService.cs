@@ -4,7 +4,7 @@ using ApexRestaurant.Repository;
 
 namespace ApexRestaurant.Services
 {
-    public abstract class GenericService<T> : IGenericService<T>where T : class, new()
+    public class GenericService<T> : IGenericService<T> where T : class
     {
         protected GenericService(IGenericRepository<T> entityRepository)
         {
@@ -12,29 +12,32 @@ namespace ApexRestaurant.Services
         }
 
         protected IGenericRepository<T> EntityRepository { get; }
-        public void Insert(T entity)
+
+        public async Task Insert(T entity)
         {
-            EntityRepository.Insert(entity);
+            await EntityRepository.Insert(entity);
         }
 
-        public void Update(T entity)
+        public async Task Update(T entity)
         {
-            EntityRepository.Update(entity);
+            await EntityRepository.Update(entity);
         }
 
-        public IList<T> GetAll()
+        public async Task<IEnumerable<T>> GetAll()
         {
-            return EntityRepository.Query().ToList();
+            // return EntityRepository.Query().ToList();
+            return await EntityRepository.GetAll();
         }
 
-        public T GetById(int id)
+        public async Task<T?> GetById(int id)
         {
-            return EntityRepository.Get(id);
+            return await EntityRepository.GetById(id);
         }
 
-        public void Delete(T entity)
+        public async Task Delete(T entity)
         {
-            EntityRepository.Delete(entity);
+            await EntityRepository.Delete(entity);
         }
+
     }
 }

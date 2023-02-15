@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using ApexRestaurant.Repository.Domain;
-
 namespace ApexRestaurant.Repository
 {
     public class RestaurantContext : DbContext

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\dotnet\\ApexRestaurant\\ApexRestaurant.Mvc\\ApexRestaurant.Mvc.csproj": {}
+    "G:\\dotnet\\ApexResturant-main\\ApexResturant-main\\ApexRestaurant.Mvc\\ApexRestaurant.Mvc.csproj": {}
   },
   "projects": {
-    "G:\\dotnet\\ApexRestaurant\\ApexRestaurant.Mvc\\ApexRestaurant.Mvc.csproj": {
+    "G:\\dotnet\\ApexResturant-main\\ApexResturant-main\\ApexRestaurant.Mvc\\ApexRestaurant.Mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\dotnet\\ApexRestaurant\\ApexRestaurant.Mvc\\ApexRestaurant.Mvc.csproj",
+        "projectUniqueName": "G:\\dotnet\\ApexResturant-main\\ApexResturant-main\\ApexRestaurant.Mvc\\ApexRestaurant.Mvc.csproj",
         "projectName": "ApexRestaurant.Mvc",
-        "projectPath": "G:\\dotnet\\ApexRestaurant\\ApexRestaurant.Mvc\\ApexRestaurant.Mvc.csproj",
+        "projectPath": "G:\\dotnet\\ApexResturant-main\\ApexResturant-main\\ApexRestaurant.Mvc\\ApexRestaurant.Mvc.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "G:\\dotnet\\ApexRestaurant\\ApexRestaurant.Mvc\\obj\\",
+        "outputPath": "G:\\dotnet\\ApexResturant-main\\ApexResturant-main\\ApexRestaurant.Mvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -40,23 +40,23 @@
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.2, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

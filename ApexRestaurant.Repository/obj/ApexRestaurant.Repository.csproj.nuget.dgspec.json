@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\dotnet\\ApexRestaurant\\ApexRestaurant.Repository\\ApexRestaurant.Repository.csproj": {}
+    "G:\\dotnet\\Dotnet lab\\ApexResturant-main\\ApexRestaurant.Repository\\ApexRestaurant.Repository.csproj": {}
   },
   "projects": {
-    "G:\\dotnet\\ApexRestaurant\\ApexRestaurant.Repository\\ApexRestaurant.Repository.csproj": {
+    "G:\\dotnet\\Dotnet lab\\ApexResturant-main\\ApexRestaurant.Repository\\ApexRestaurant.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\dotnet\\ApexRestaurant\\ApexRestaurant.Repository\\ApexRestaurant.Repository.csproj",
+        "projectUniqueName": "G:\\dotnet\\Dotnet lab\\ApexResturant-main\\ApexRestaurant.Repository\\ApexRestaurant.Repository.csproj",
         "projectName": "ApexRestaurant.Repository",
-        "projectPath": "G:\\dotnet\\ApexRestaurant\\ApexRestaurant.Repository\\ApexRestaurant.Repository.csproj",
+        "projectPath": "G:\\dotnet\\Dotnet lab\\ApexResturant-main\\ApexRestaurant.Repository\\ApexRestaurant.Repository.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "G:\\dotnet\\ApexRestaurant\\ApexRestaurant.Repository\\obj\\",
+        "outputPath": "G:\\dotnet\\Dotnet lab\\ApexResturant-main\\ApexRestaurant.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -40,11 +40,25 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
